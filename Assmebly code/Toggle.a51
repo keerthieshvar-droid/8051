@@ -1,0 +1,6 @@
+ORG 0000H
+
+HERE: CPL P1.2
+      SJMP HERE
+
+END
