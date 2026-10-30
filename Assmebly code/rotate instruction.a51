@@ -1,0 +1,21 @@
+ORG 0000H
+	MOV A,#01H
+	
+	HERE:
+	    MOV P1,A
+		ACALL DELAY
+		RL A
+		SJMP HERE
+		
+DELAY:
+		MOV R2,#225
+		D1:
+		MOV R3,#225
+		D2:
+		MOV R4,#225
+		LOOP:
+		DJNZ R4,LOOP
+		DJNZ R3,D2
+		DJNZ R2,D1
+		RET
+		END
