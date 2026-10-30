@@ -1,0 +1,10 @@
+ORG 0000H
+
+DELAY:
+    MOV R1,#255
+
+LOOP:
+    DJNZ R1,LOOP
+    RET
+
+END
