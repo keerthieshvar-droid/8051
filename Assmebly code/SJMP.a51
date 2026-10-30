@@ -1,0 +1,6 @@
+ORG 0000H
+
+HERE:
+    SJMP HERE
+
+END
